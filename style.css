@@ -1,22 +1,87 @@
+/* Full page */
 body {
-    background-color: #f3f3f3;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, rgb(0, 225, 255), rgb(245, 239, 239));
+  min-height: 100vh;
+  font-family: monospace;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
+/* Container */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    border: 1px solid gray;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 85%;
+  text-align: center;
+  color: darkblue;
+
+  /* just to visualize spacing */
+  /* border: 1px solid #fff; */
 }
 
-.container h1 {
-    text-align: center;
-    margin: 0;
-    padding: 15px 0;
+/* Heading area */
+.heading {
+  font-size: 40px;
+  font-weight: 200;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: 5px 5px 2px white;
+  letter-spacing: 2px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  /* just to visualize spacing */
+  /* border: 1px solid #fff; */
+}
+
+/* Joke area */
+.joke {
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  margin: 40px 0;
+  padding: 15px 0;
+
+  /* just to visualize spacing  */
+  /* border: 1px solid #fff; */
+}
+
+/* BUTTON Styling */
+.btn {
+  border-radius: 5px;
+  border: #fff 2px solid;
+  cursor: pointer;
+  color: darkblue;
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.btn:hover {
+  background: aqua;
+  border: #fff 2px solid;
+  color: #fff;
+
+  /* this makes the button appear to be glowing when hovering over it, kind of cool feature. */
+  box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
 }
